@@ -17,3 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://thinking-tester-contact-list.herokuapp.com/')
+
+WebUI.setText(findTestObject('Object Repository/Login/Page_Contact List App/input_here_email'), 'yossia@gmail.com')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Login/Page_Contact List App/input_here_password'), 'z/v28+WfF+pSwgwAJXNcMA==')
+
+WebUI.click(findTestObject('Object Repository/Login/Page_Contact List App/button_Submit'))
+
+WebUI.closeBrowser()
+
